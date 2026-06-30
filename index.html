@@ -94,17 +94,18 @@ header {
 @keyframes glow { from { opacity: 0.8; } to { opacity: 1; } }
 
 .outline-text {
-  font-family: 'Anton', sans-serif; font-size: clamp(3.5rem, 10vw, 10rem);
-  line-height: 0.85; text-transform: uppercase; color: transparent;
+  font-family: 'Anton', sans-serif; font-size: clamp(3rem, 11vw, 12rem);
+  line-height: 0.9; text-transform: uppercase; color: transparent;
   -webkit-text-stroke: 2px #fff; white-space: nowrap;
 }
 @media (max-width: 991px) { .outline-text { -webkit-text-stroke: 1px #fff; } }
 
 .solid-text {
-  font-family: 'Anton', sans-serif; font-size: clamp(3.5rem, 10vw, 10rem);
-  line-height: 0.85; text-transform: uppercase; color: #fff;
+  font-family: 'Anton', sans-serif; font-size: clamp(3rem, 11vw, 12rem);
+  line-height: 0.9; text-transform: uppercase; color: #fff;
+  white-space: nowrap;
 }
-.reveal-line { overflow: hidden; display: block; }
+.reveal-line { overflow: hidden; display: block; padding-bottom: 0.15em; }
 .reveal-line span { display: block; transform: translateY(110%); }
 
 .hero-sub {
@@ -424,7 +425,7 @@ footer {
 <div class="cursor-wrapper"><div class="cursor-dot"></div></div>
 
 <header>
-  <a href="#" class="brand"><span>ABHINAB</span></a>
+  <a href="#" class="brand"></a>
   <button class="menu-btn hovers magnetic" onclick="toggleNav()">Menu</button>
 </header>
 
@@ -448,13 +449,10 @@ footer {
 
     <div style="position:relative; z-index:2;">
       <div class="solid-text reveal-line hero-tagline" style="padding-left: 0;">
-  <span>Engineering metal systems that matters.</span>
+  <span>ABHINAB</span>
 </div>
 <div class="outline-text reveal-line" style="padding-left: 5vw;">
-  <span>Crafting precision, sustainability, and impact.</span>
-</div>
-<div class="solid-text reveal-line" style="padding-left: 10vw;">
-  <span>FOR THE FUTURE OF CIVILIZATION.</span>
+  <span>BORAH<span style="color: var(--accent-red); -webkit-text-stroke: 0px; display: inline-block; margin-left: -0.03em;">.</span></span>
 </div>
       
       <div class="hero-sub">
